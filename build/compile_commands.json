@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ryz/Documents/Code/Cstring/build",
+  "command": "g++   -g -std=gnu++20 -o CMakeFiles/EXECUTABLE_NAME.dir/main.cpp.o -c /home/ryz/Documents/Code/Cstring/main.cpp",
+  "file": "/home/ryz/Documents/Code/Cstring/main.cpp"
+},
+{
+  "directory": "/home/ryz/Documents/Code/Cstring/build/strings",
+  "command": "g++   -g -std=gnu++20 -o CMakeFiles/Cstring.dir/Cstring.cpp.o -c /home/ryz/Documents/Code/Cstring/strings/Cstring.cpp",
+  "file": "/home/ryz/Documents/Code/Cstring/strings/Cstring.cpp"
+}
+]
