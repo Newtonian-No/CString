@@ -1,0 +1,6 @@
+D:/Code/Cstrings/build/CMakeFiles/EXECUTABLE_NAME.dir
+D:/Code/Cstrings/build/CMakeFiles/edit_cache.dir
+D:/Code/Cstrings/build/CMakeFiles/rebuild_cache.dir
+D:/Code/Cstrings/build/strings/CMakeFiles/Cstring.dir
+D:/Code/Cstrings/build/strings/CMakeFiles/edit_cache.dir
+D:/Code/Cstrings/build/strings/CMakeFiles/rebuild_cache.dir

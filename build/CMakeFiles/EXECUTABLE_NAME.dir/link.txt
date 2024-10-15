@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\EXECUTABLE_NAME.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\EXECUTABLE_NAME.dir/objects.a @CMakeFiles\EXECUTABLE_NAME.dir\objects1.rsp
+g++ -g -Wl,--whole-archive CMakeFiles\EXECUTABLE_NAME.dir/objects.a -Wl,--no-whole-archive -o EXECUTABLE_NAME.exe -Wl,--out-implib,libEXECUTABLE_NAME.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\EXECUTABLE_NAME.dir\linkLibs.rsp
