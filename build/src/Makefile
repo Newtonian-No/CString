@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryz/Documents/Code/Cstring/build/CMakeFiles /home/ryz/Documents/Code/Cstring/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/ryz/Documents/Code/Cstring/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ryz/Documents/Code/Cstring/build/CMakeFiles /home/ryz/Documents/Code/Cstring/build/src//CMakeFiles/progress.marks
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryz/Documents/Code/Cstring/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,44 +103,94 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ryz/Documents/Code/Cstring/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named MyLib
+# Convenience name for target.
+src/CMakeFiles/MyLib.dir/rule:
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MyLib.dir/rule
+.PHONY : src/CMakeFiles/MyLib.dir/rule
 
-# Build rule for target.
-MyLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyLib
+# Convenience name for target.
+MyLib: src/CMakeFiles/MyLib.dir/rule
 .PHONY : MyLib
 
 # fast build rule for target.
 MyLib/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyLib.dir/build.make src/CMakeFiles/MyLib.dir/build
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyLib.dir/build.make src/CMakeFiles/MyLib.dir/build
 .PHONY : MyLib/fast
 
-#=============================================================================
-# Target rules for targets named MyExecutable
+# Convenience name for target.
+src/CMakeFiles/MyExecutable.dir/rule:
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/MyExecutable.dir/rule
+.PHONY : src/CMakeFiles/MyExecutable.dir/rule
 
-# Build rule for target.
-MyExecutable: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MyExecutable
+# Convenience name for target.
+MyExecutable: src/CMakeFiles/MyExecutable.dir/rule
 .PHONY : MyExecutable
 
 # fast build rule for target.
 MyExecutable/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/build
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/build
 .PHONY : MyExecutable/fast
+
+lib/Cstring.o: lib/Cstring.cpp.o
+.PHONY : lib/Cstring.o
+
+# target to build an object file
+lib/Cstring.cpp.o:
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyLib.dir/build.make src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.o
+.PHONY : lib/Cstring.cpp.o
+
+lib/Cstring.i: lib/Cstring.cpp.i
+.PHONY : lib/Cstring.i
+
+# target to preprocess a source file
+lib/Cstring.cpp.i:
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyLib.dir/build.make src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.i
+.PHONY : lib/Cstring.cpp.i
+
+lib/Cstring.s: lib/Cstring.cpp.s
+.PHONY : lib/Cstring.s
+
+# target to generate assembly for a file
+lib/Cstring.cpp.s:
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyLib.dir/build.make src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.s
+.PHONY : lib/Cstring.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/ryz/Documents/Code/Cstring/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/MyExecutable.dir/build.make src/CMakeFiles/MyExecutable.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -152,6 +202,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... MyExecutable"
 	@echo "... MyLib"
+	@echo "... lib/Cstring.o"
+	@echo "... lib/Cstring.i"
+	@echo "... lib/Cstring.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -163,6 +219,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ryz/Documents/Code/Cstring/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

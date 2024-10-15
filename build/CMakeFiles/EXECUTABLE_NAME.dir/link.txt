@@ -1,1 +1,0 @@
-g++ -g CMakeFiles/EXECUTABLE_NAME.dir/main.cpp.o -o EXECUTABLE_NAME  strings/libCstring.a 

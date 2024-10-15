@@ -1,12 +1,12 @@
 [
 {
-  "directory": "/home/ryz/Documents/Code/Cstring/build",
-  "command": "g++   -g -std=gnu++20 -o CMakeFiles/EXECUTABLE_NAME.dir/main.cpp.o -c /home/ryz/Documents/Code/Cstring/main.cpp",
-  "file": "/home/ryz/Documents/Code/Cstring/main.cpp"
+  "directory": "/home/ryz/Documents/Code/Cstring/build/src",
+  "command": "/usr/local/bin/g++  -I/home/ryz/Documents/Code/Cstring/src/include -g -o CMakeFiles/MyLib.dir/lib/Cstring.cpp.o -c /home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp",
+  "file": "/home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp"
 },
 {
-  "directory": "/home/ryz/Documents/Code/Cstring/build/strings",
-  "command": "g++   -g -std=gnu++20 -o CMakeFiles/Cstring.dir/Cstring.cpp.o -c /home/ryz/Documents/Code/Cstring/strings/Cstring.cpp",
-  "file": "/home/ryz/Documents/Code/Cstring/strings/Cstring.cpp"
+  "directory": "/home/ryz/Documents/Code/Cstring/build/src",
+  "command": "/usr/local/bin/g++  -I/home/ryz/Documents/Code/Cstring/src/include -g -o CMakeFiles/MyExecutable.dir/main.cpp.o -c /home/ryz/Documents/Code/Cstring/src/main.cpp",
+  "file": "/home/ryz/Documents/Code/Cstring/src/main.cpp"
 }
 ]

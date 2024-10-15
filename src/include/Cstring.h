@@ -1,7 +1,7 @@
 #ifndef CSTRING_H
 #define CSTRING_H
 #include <iostream>
-//#include <cstring>
+#include <cstring>
 using namespace std;
 
 class CString {
