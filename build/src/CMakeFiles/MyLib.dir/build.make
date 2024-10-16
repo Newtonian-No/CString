@@ -73,15 +73,15 @@ src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.o: src/CMakeFiles/MyLib.dir/flags.make
 src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.o: /home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp
 src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.o: src/CMakeFiles/MyLib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ryz/Documents/Code/Cstring/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.o"
-	cd /home/ryz/Documents/Code/Cstring/build/src && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.o -MF CMakeFiles/MyLib.dir/lib/Cstring.cpp.o.d -o CMakeFiles/MyLib.dir/lib/Cstring.cpp.o -c /home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp
+	cd /home/ryz/Documents/Code/Cstring/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.o -MF CMakeFiles/MyLib.dir/lib/Cstring.cpp.o.d -o CMakeFiles/MyLib.dir/lib/Cstring.cpp.o -c /home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp
 
 src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyLib.dir/lib/Cstring.cpp.i"
-	cd /home/ryz/Documents/Code/Cstring/build/src && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp > CMakeFiles/MyLib.dir/lib/Cstring.cpp.i
+	cd /home/ryz/Documents/Code/Cstring/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp > CMakeFiles/MyLib.dir/lib/Cstring.cpp.i
 
 src/CMakeFiles/MyLib.dir/lib/Cstring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyLib.dir/lib/Cstring.cpp.s"
-	cd /home/ryz/Documents/Code/Cstring/build/src && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp -o CMakeFiles/MyLib.dir/lib/Cstring.cpp.s
+	cd /home/ryz/Documents/Code/Cstring/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryz/Documents/Code/Cstring/src/lib/Cstring.cpp -o CMakeFiles/MyLib.dir/lib/Cstring.cpp.s
 
 # Object files for target MyLib
 MyLib_OBJECTS = \

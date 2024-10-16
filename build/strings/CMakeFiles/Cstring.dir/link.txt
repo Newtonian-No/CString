@@ -1,2 +1,0 @@
-/usr/bin/ar qc libCstring.a CMakeFiles/Cstring.dir/Cstring.cpp.o
-/usr/bin/ranlib libCstring.a

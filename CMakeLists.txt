@@ -6,8 +6,12 @@ cmake_minimum_required(VERSION 3.13)
 # 工程名称
 project(MyProject VERSION 1.0)
 
+#设置输出目录
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin)
+
 #包含头文件目录
 include_directories(${PROJECT_SOURCE_DIR}/src/include)
 
 #添加在子目录
 add_subdirectory(src)
+

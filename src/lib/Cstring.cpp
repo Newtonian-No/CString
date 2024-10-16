@@ -108,28 +108,19 @@ int CString::str_length() const
 
 CString& CString::insert(int p0, const char *s)
 {
-    // ����Ҫ������ַ����ĳ���
     int s_length = strlen(s);
     if (p0 < 0 || p0 > s_length) 
     {
+        cout << "Error: insert position out of range." << endl;
         return *this;
     }
-    // ����һ���µ�������������Ų����Ľ��
     char *new_data = new char[s_length + s_length + 1];
-
-    // ���Ʋ���λ��ǰ�Ĳ���
     strncpy(new_data, data, p0);
-    
-    // �����µ��ַ���
     strncpy(new_data + p0, s, s_length);
-    
-    // ���Ʋ���λ�ú�Ĳ���
     strncpy(new_data + p0 + s_length, data + p0, length - p0);
-
-    // ����ԭ����ָ��ͳ���
-    delete[] data; // ɾ���ɵ�����
+    delete[] data;
     data = new_data;
-    length += s_length; // ���³���
+    length += s_length;
 
     return *this;
 }
@@ -147,6 +138,7 @@ int CString::find (const CString &Str) const
 {
     if(Str.length == 0 || length < Str.length)
     {
+        cout << "Error: find string is empty or out of range." << endl;
         return -1;
     }
     for (int i=0 ; i< length - Str.length + 1; i++)
@@ -156,6 +148,7 @@ int CString::find (const CString &Str) const
             return i;
         }
     }
+    cout << "Error: find string is not found." << endl;
     return -1;
 }
 
@@ -217,12 +210,8 @@ ostream & operator<<(ostream &out, const CString &Str)
 
 istream &operator>>(istream &in, CString &Str)
 {
-    char c;
     Str.clear();
-    while (in.get(c))
-    {
-        Str.insert(Str.length, &c);
-    }
+    in >> Str.data;
     return in;
 }
 
