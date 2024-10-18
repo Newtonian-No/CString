@@ -15,6 +15,7 @@ int main() {
         std::cout << "7. 测试赋值运算符\n";
         std::cout << "8. 测试友元函数 getline\n";
         std::cout << "9. 测试输入字符串\n";
+        std::cout << "10.输出字符串str1\n";
         std::cout << "0. 退出\n";
         std::cout << "请输入您的选择: ";
         std::cin >> choice;
@@ -34,9 +35,11 @@ int main() {
                 CString insertStr;
                 std::cout << "请输入要插入的字符串: ";
                 std::cin >> insertStr;
-                std::cout << "您插入的字符串: " ;
+                std::cout << "选择插入位置：";
+                int pos;
+                std::cin >> pos;
                 std::cout << insertStr << std::endl;
-                str1.insert(0, insertStr.c_str());//这里的c_str()返回const指针
+                str1.insert(pos, insertStr.c_str());//这里的c_str()返回const指针
                 std::cout << "插入后: " << str1 << std::endl;
                 break;
             }
@@ -71,6 +74,10 @@ int main() {
                 std::cout << "请输入一个字符串（最多100个字符，以换行结束）: ";
                 std ::cin >> str1;
                 std::cout << "您输入的字符串: " << str1 << std::endl;
+                break;
+            }
+            case 10: {
+                std::cout << "str1: " << str1 << std::endl;
                 break;
             }
             case 0:

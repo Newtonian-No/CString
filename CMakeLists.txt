@@ -3,11 +3,14 @@
 # cmake 最低版本需求
 cmake_minimum_required(VERSION 3.13)
 
+# Enable C++17
+#set(CMAKE_CXX_STANDARD 17)
+
 # 工程名称
 project(MyProject VERSION 1.0)
 
 #设置输出目录
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin)
+#SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin)
 
 #包含头文件目录
 include_directories(${PROJECT_SOURCE_DIR}/src/include)

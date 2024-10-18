@@ -129,6 +129,7 @@ CString CString::substr(int pos, int len) const
 {
     if (pos < 0 || pos > length || len  < 0 || pos + len > length)
     {
+        cout << "Error: substr position or length out of range." << endl;
         return CString();
     }
     return CString(data + pos, len);
@@ -212,30 +213,21 @@ istream &operator>>(istream &in, CString &Str)
 {
     Str.clear();
     in >> Str.data;
+    if (Str.data == nullptr)
+    {
+        Str.clear();
+        cout << "Error: input is null." << endl;
+        return in;
+    }
     return in;
 }
 
 istream &getline(istream &in, CString &Str, int num , char delim)
 {
-    char c;
     Str.clear();
-    int count = 0;
-    while (in.get(c))
-    {
-        if (c == delim)
-        {
-            count++;
-            if (count == num)
-            {
-                in.unget();
-                break;
-            }
-        }
-        else
-        {
-            Str.insert(Str.length, &c);
-        }
-    }
+    Str.data = new char[num];
+    in.getline(Str.data, num, delim);
+    Str.length = strlen(Str.data);
     return in;
 }
 
